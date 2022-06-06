@@ -13,7 +13,7 @@ const Home = () => {
 	const [data, setData] = useState<ListItemModel[]>([])
 	
 	const callApi = async () => {
-		axios.get('http://localhost:3001/lecture').then((res) => {
+		axios.get('http://3.36.16.83:3001/lecture').then((res) => {
 			setData(res.data)
 		})
 	}
